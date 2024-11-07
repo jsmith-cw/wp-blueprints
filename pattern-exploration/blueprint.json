@@ -31,7 +31,7 @@
         },
         {
             "step": "runPHP",
-            "code": "<?php include 'wordpress/wp-load.php'; wp_insert_post(array( 'post_title' => 'Post title', 'post_content' => '<!-- wp:pattern {'slug':'twentytwentyfive/banner-intro-image'} /-->', 'post_status' => 'publish', 'post_author' => 1 )); "
+            "code": "<?php include 'wordpress/wp-load.php'; wp_insert_post(array( 'post_title' => 'Workign with patterns', 'post_content' => '<!-- wp:pattern {'slug':'twentytwentyfive/banner-intro-image'} /-->', 'post_status' => 'publish', 'post_author' => 1 )); "
         }
     ]
 }
