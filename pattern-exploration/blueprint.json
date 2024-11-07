@@ -20,15 +20,18 @@
             "username": "admin"
         },
         {
-            "step": "installPlugin",
-            "pluginData": {
-                "resource": "wordpress.org/plugins",
-                "slug": "interactive-code-block"
+            "step": "installTheme",
+            "themeData": {
+                "resource": "wordpress.org/themes",
+                "slug": "twentytwentyfour"
+            },
+            "options": {
+                "activate": false
             }
         },
         {
             "step": "runPHP",
-            "code": "<?php require '/wordpress/wp-load.php'; wp_insert_post(['post_title' => 'Style Guide block','post_content' => '<!-- wp:group {\"align\":\"wide\",\"layout\":{\"type\":\"default\"}} --><div class=\"wp-block-group alignwide\"><!-- wp:style-guide-block/style-guide /--></div><!-- /wp:group -->', 'post_status' => 'publish', 'post_type' => 'post',]);"
+            "code": "<?php include 'wordpress/wp-load.php'; wp_insert_post(array( 'post_title' => 'Post title', 'post_content' => 'Post content', 'post_status' => 'publish', 'post_author' => 1 )); "
         }
     ]
 }
