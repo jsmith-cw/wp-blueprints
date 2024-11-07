@@ -28,7 +28,7 @@
         },
         {
             "step": "runPHP",
-            "code": "<?php require '/wordpress/wp-load.php'; wp_insert_post(['post_title' => 'Pattern Exploration','post_content' => '<!-- wp:pattern {'slug':'twentytwentyfive/banner-cover-big-heading'} ', 'post_status' => 'publish', 'post_type' => 'post',]);"
+            "code": "<?php require '/wordpress/wp-load.php'; wp_insert_post(['post_title' => 'Style Guide block','post_content' => '<!-- wp:group {\"align\":\"wide\",\"layout\":{\"type\":\"default\"}} --><div class=\"wp-block-group alignwide\"><!-- wp:style-guide-block/style-guide /--></div><!-- /wp:group -->', 'post_status' => 'publish', 'post_type' => 'post',]);"
         }
     ]
 }
