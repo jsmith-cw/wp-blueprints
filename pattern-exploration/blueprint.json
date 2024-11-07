@@ -29,17 +29,13 @@
         },
         {
             "step": "installTheme",
-            "themeZipFile": {
+            "themeData": {
                 "resource": "wordpress.org/themes",
                 "slug": "twentytwentyfour"
             },
             "options": {
                 "activate": false
             }
-        },
-        {
-            "step": "runPHP",
-            "code": "<?php require '/wordpress/wp-load.php'; wp_insert_post(['post_title' => 'Pattern Exploration','post_content' => '<!-- wp:pattern {'slug':'twentytwentyfive/banner-cover-big-heading'} ', 'post_status' => 'publish', 'post_type' => 'post',]);"
         }
     ]
 }
