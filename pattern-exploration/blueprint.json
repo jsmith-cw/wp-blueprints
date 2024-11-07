@@ -21,7 +21,7 @@
         },
         {
             "step": "runPHP",
-            "code": "<?php include 'wordpress/wp-load.php'; wp_insert_post(array( 'post_title' => 'Working with patterns', 'post_content' => '<!-- wp:pattern {\"slug\":\"twentytwentyfive/banner-intro-image\"} /-->', 'post_status' => 'publish', 'post_author' => 1 )); "
+            "code": "<?php include 'wordpress/wp-load.php'; wp_insert_post(array( 'post_title' => 'Working with patterns', 'post_content' => '<!-- wp:pattern {\"slug\":\"twentytwentyfive/banner-about-book\"} /--><!-- wp:pattern {\"slug\":\"twentytwentyfive/text-faqs\"} /--><!-- wp:pattern {\"slug\":\"twentytwentyfive/banner-description-images-grid\"} /-->', 'post_status' => 'publish', 'post_author' => 1 )); "
         }
     ]
 }
