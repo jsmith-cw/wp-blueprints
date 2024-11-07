@@ -17,24 +17,13 @@
     "steps": [
         {
             "step": "login",
-            "username": "admin",
-            "password": "password"
+            "username": "admin"
         },
         {
             "step": "installPlugin",
             "pluginData": {
                 "resource": "wordpress.org/plugins",
                 "slug": "interactive-code-block"
-            }
-        },
-        {
-            "step": "installTheme",
-            "themeData": {
-                "resource": "wordpress.org/themes",
-                "slug": "twentytwentyfour"
-            },
-            "options": {
-                "activate": false
             }
         }
     ]
